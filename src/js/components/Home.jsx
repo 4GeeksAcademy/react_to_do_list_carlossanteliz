@@ -20,13 +20,16 @@ const Home = () => {
 	const eliminarTarea = (posicion) => {
 		setLista(lista.filter((item, index) => index !== posicion))
 	}
+
 	return (
-		<div className="text-center">
+
+		<div className="text-center paper">
 			<input type="text" placeholder="agrega una tarea" onChange={escribirTarea} value={tarea} onKeyDown={agregar} />
 			<ul className="list-unstyled">
 				{lista.map((item, index) => (<li key={index}>{item}<span onClick={() => eliminarTarea(index)}> ❌</span></li>))}
 
 			</ul>
+			<p className="counter">Aún hay {lista.length} tarea</p>
 		</div>
 
 	);
