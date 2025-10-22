@@ -22,15 +22,17 @@ const Home = () => {
 	}
 
 	return (
+		<>
+			<h1 className="big-title">todos</h1>
+			<div className="text-center paper">
+				<input className="ingreso-de-texto" type="text" placeholder="What needs to be done?" onChange={escribirTarea} value={tarea} onKeyDown={agregar} />
+				<ul className="list-unstyled texto-ingresado">
+					{lista.map((item, index) => (<li key={index}>{item}<span onClick={() => eliminarTarea(index)}> ❌</span></li>))}
 
-		<div className="text-center paper">
-			<input type="text" placeholder="agrega una tarea" onChange={escribirTarea} value={tarea} onKeyDown={agregar} />
-			<ul className="list-unstyled">
-				{lista.map((item, index) => (<li key={index}>{item}<span onClick={() => eliminarTarea(index)}> ❌</span></li>))}
-
-			</ul>
-			<p className="counter">Aún hay {lista.length} tarea</p>
-		</div>
+				</ul>
+				<p className="counter">{lista.length} items left</p>
+			</div>
+		</>
 
 	);
 };
