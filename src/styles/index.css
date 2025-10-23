@@ -1,5 +1,6 @@
 body {
     background-color: rgb(237, 237, 237);
+    font-family: 'Inter', sans-serif;
     
 }
 
@@ -8,6 +9,8 @@ body {
   justify-content: center;
   color: #cb8888;
   opacity: 0.3;
+  font-size: 100px;
+  font-weight: 150;
 }
 
 .paper {
@@ -28,6 +31,7 @@ margin: 30px auto;
 width: 80%;
 display: block;
 
+
  
 }
 
@@ -36,8 +40,9 @@ display: block;
   border-color: none;
   border: none;
   outline: none;
-  opacity: 0.5;
-  font-size: 20px;
+  opacity: 0.6;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .counter {
@@ -52,9 +57,17 @@ display: block;
   align-items: center;
   padding: 5px 10px;
   border-bottom: 1px solid #eee;
-  margin-left: 116px;
+  margin-left: 110px;
   margin-right: 116px;
-  opacity: 0.5;
-  font-size: 20px;
+  opacity: 0.6;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.texto-ingresado li span {
+  opacity: 0.2;
+  font-size: 0.6em;
+  cursor: pointer;
+
 }
 
