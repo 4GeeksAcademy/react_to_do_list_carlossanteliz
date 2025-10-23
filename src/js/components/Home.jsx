@@ -24,7 +24,7 @@ const Home = () => {
 	return (
 		<>
 			<h1 className="big-title">todos</h1>
-			<div className="text-center paper">
+			<div className="text-center paper ">
 				<input className="ingreso-de-texto" type="text" placeholder="What needs to be done?" onChange={escribirTarea} value={tarea} onKeyDown={agregar} />
 				<ul className="list-unstyled texto-ingresado">
 					{lista.map((item, index) => (<li key={index}>{item}<span onClick={() => eliminarTarea(index)}> ❌</span></li>))}
