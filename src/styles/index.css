@@ -28,13 +28,13 @@ body {
     
     0 20px 1px -9px rgba(0,0,0,0.15),  
     
-    /* 2px 1px 1px rgba(0,0,0,0.15); */
+    
     0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 padding: 30px;
 margin: 30px auto;
 margin-top: 15px;
-width: 80%;
+width: 60%;
 display: block;
 
 
@@ -42,7 +42,7 @@ display: block;
 }
 
 .ingreso-de-texto {
-  width: 80%;
+  width: 60%;
   border-color: none;
   border: none;
   outline: none;
@@ -52,7 +52,7 @@ display: block;
 }
 
 .counter {
-    margin-left: -1000px;
+    margin-left: -750px;
     opacity: 0.3;
 }
 
@@ -63,8 +63,8 @@ display: block;
   align-items: center;
   padding: 5px 10px;
   border-bottom: 1px solid #eee;
-  margin-left: 110px;
-  margin-right: 116px;
+  margin-left: 160px;
+  margin-right: 20px;
   opacity: 0.6;
   font-size: 30px;
   font-weight: 200;
